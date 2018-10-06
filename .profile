@@ -14,7 +14,8 @@ function ssh_tunneling(){
     INPORT=$1
     OUTPORT=$2
     SERVER=$3
-    for v in $(seq 1 10000); do ssh -L $INPORT:$SERVER:$OUTPORT mcherti@romeo1.univ-reims.fr -N -v -g; done
+    REMOTE=$4
+    for v in $(seq 1 10000); do ssh -L $INPORT:$SERVER:$OUTPORT $REMOTE -N -v -g; done
 }
 function gcu(){
     git add -u
