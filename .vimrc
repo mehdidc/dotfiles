@@ -13,6 +13,7 @@ set encoding=utf-8
 set mouse=a
 set textwidth=80
 let mapleader = " "
+set history=200
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
