@@ -1,7 +1,0 @@
-[user]
-	email = mehdicherti@gmail.com
-	name = mehdi cherti
-[core]
-	editor = vim
-[credential]
-	helper = cache --timeout=6048000
