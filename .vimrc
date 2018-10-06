@@ -26,6 +26,7 @@ Plug 'ervandew/supertab'
 Plug 'rking/ag.vim'
 Plug 'craigemery/vim-autotag'
 Plug 'irrationalistic/vim-tasks'
+Plug 'ludovicchabant/vim-gutentags'
 call plug#end()
 
 let g:syntastic_always_populate_loc_list = 0
