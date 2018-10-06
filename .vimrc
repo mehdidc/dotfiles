@@ -24,7 +24,6 @@ Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdcommenter'
 Plug 'ervandew/supertab'
 Plug 'rking/ag.vim'
-Plug 'craigemery/vim-autotag'
 Plug 'irrationalistic/vim-tasks'
 Plug 'ludovicchabant/vim-gutentags'
 call plug#end()
