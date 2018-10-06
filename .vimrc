@@ -11,6 +11,8 @@ set softtabstop=4
 filetype indent on
 set encoding=utf-8
 set mouse=a
+set textwidth=80
+let mapleader = " "
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
