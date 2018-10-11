@@ -13,7 +13,7 @@ set encoding=utf-8
 set mouse=a
 let mapleader = " "
 set history=200
-nmap <leader>p :CtrlPBuffer<CR>
+nmap <leader>p :CtrlPMixed<CR>
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
