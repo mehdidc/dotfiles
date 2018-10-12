@@ -25,7 +25,7 @@ Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdcommenter'
 Plug 'ervandew/supertab'
-Plug 'rking/ag.vim'
+Plug 'mileszs/ack.vim'
 Plug 'irrationalistic/vim-tasks'
 Plug 'ludovicchabant/vim-gutentags'
 call plug#end()
