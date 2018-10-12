@@ -14,6 +14,7 @@ set mouse=a
 let mapleader = " "
 set history=200
 nmap <leader>p :CtrlPBuffer<CR>
+nmap <leader>t :CtrlPTag<CR>
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
