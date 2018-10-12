@@ -10,23 +10,50 @@ set shiftwidth=4
 set softtabstop=4
 filetype indent on
 set encoding=utf-8
+
+"to use mouse
 set mouse=a
+
+"easier than \
 let mapleader = " "
+
 set history=200
+
+"to search on recently opened files
 nmap <leader>p :CtrlPBuffer<CR>
+
+"to search on tags
 nmap <leader>t :CtrlPTag<CR>
+
+"disable automatic syntax checking after :w 
+"it's because sometimes it's too slow
 let g:syntastic_mode_map = {"mode": "passive",}
 
+"highlight all occurrences when searching for a pattern
+set hlsearch
+
+"show tags of the file
+nmap <F8> :TagbarToggle<CR>
+
+
 call plug#begin('~/.vim/plugged')
+" fancy tree
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
+" FUzzy search
 Plug 'kien/ctrlp.vim'
+"Syntax checking
 Plug 'scrooloose/syntastic'
+" show all tags
 Plug 'majutsushi/tagbar'
+"comment several lines
 Plug 'scrooloose/nerdcommenter'
 Plug 'ervandew/supertab'
+"search
 Plug 'mileszs/ack.vim'
+"write todo files
 Plug 'irrationalistic/vim-tasks'
+"save tags automatically
 Plug 'ludovicchabant/vim-gutentags'
 call plug#end()
 
