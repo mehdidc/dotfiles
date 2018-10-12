@@ -36,3 +36,5 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 let g:syntastic_python_checkers = ['pylint', 'flake8']
 let g:ycm_python_binary_path = '/home/mehdi/miniconda2/envs/py35/bin/python'
+
+let g:gutentags_file_list_command = 'find . -name "*.py"'
