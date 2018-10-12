@@ -15,6 +15,7 @@ let mapleader = " "
 set history=200
 nmap <leader>p :CtrlPBuffer<CR>
 nmap <leader>t :CtrlPTag<CR>
+let g:syntastic_mode_map = {"mode": "passive",}
 
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
