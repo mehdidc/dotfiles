@@ -19,7 +19,7 @@ let mapleader = " "
 set history=200
 
 "to search on recently opened files
-nmap <leader>p :CtrlPBuffer<CR>
+nmap <leader>b :CtrlPBuffer<CR>
 
 "to search on tags
 nmap <leader>t :CtrlPTag<CR>
