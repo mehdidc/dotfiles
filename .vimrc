@@ -35,7 +35,7 @@ set hlsearch
 nmap <F3> :TagbarToggle<CR>
 
 "show tree
-nmap <F2> :NERDTree<CR>
+nmap <F2> :NERDTreeToggle<CR>
 
 
 call plug#begin('~/.vim/plugged')
