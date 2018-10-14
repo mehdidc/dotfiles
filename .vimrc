@@ -32,7 +32,7 @@ let g:syntastic_mode_map = {"mode": "passive"}
 set hlsearch
 
 "show tags of the file
-nmap <F8> :TagbarToggle<CR>
+nmap <F3> :TagbarToggle<CR>
 
 "show tree
 nmap <F2> :NERDTree<CR>
