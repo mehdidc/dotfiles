@@ -37,6 +37,8 @@ nmap <F3> :TagbarToggle<CR>
 "show tree
 nmap <F2> :NERDTreeToggle<CR>
 
+"check syntax
+nmap <F5> :SyntasticCheck
 
 call plug#begin('~/.vim/plugged')
 " fancy tree
