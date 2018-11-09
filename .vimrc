@@ -61,6 +61,8 @@ Plug 'mileszs/ack.vim'
 Plug 'irrationalistic/vim-tasks'
 "save tags automatically
 Plug 'ludovicchabant/vim-gutentags'
+"autopep8
+Plug 'tell-k/vim-autopep8'
 call plug#end()
 
 
