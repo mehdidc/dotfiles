@@ -74,6 +74,5 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 let g:syntastic_python_checkers = ['flake8']
 let g:gutentags_file_list_command = 'find . -name "*.py"'
-
 let g:github_colors_soft = 1
 colorscheme darkblue
