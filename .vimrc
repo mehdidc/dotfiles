@@ -63,6 +63,8 @@ Plug 'irrationalistic/vim-tasks'
 Plug 'ludovicchabant/vim-gutentags'
 "autopep8
 Plug 'tell-k/vim-autopep8'
+"black python formatting
+Plug 'ambv/black'
 call plug#end()
 
 
