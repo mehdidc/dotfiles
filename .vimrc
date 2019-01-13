@@ -71,6 +71,9 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 let g:syntastic_python_checkers = ['flake8']
+"ignore 80 line length
+let g:syntastic_python_flake8_args='--ignore=E501'
+
 let g:gutentags_file_list_command = 'find . -name "*.py"'
 
 let g:github_colors_soft = 1
