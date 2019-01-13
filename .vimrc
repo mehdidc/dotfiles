@@ -77,4 +77,3 @@ let g:syntastic_python_flake8_args='--ignore=E501'
 let g:gutentags_file_list_command = 'find . -name "*.py"'
 
 let g:github_colors_soft = 1
-colorscheme darkblue
