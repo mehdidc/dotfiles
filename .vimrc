@@ -13,7 +13,7 @@ set encoding=utf-8
 "to use mouse
 set mouse=a
 
-"easier than \
+"leader = space, easier to type than '\'
 let mapleader = " "
 
 set history=200
@@ -39,6 +39,7 @@ nmap <F2> :NERDTreeToggle<CR>
 
 "check syntax
 nmap <F5> :SyntasticCheck
+let s:kite_auto_launched = 0
 
 call plug#begin('~/.vim/plugged')
 " fancy tree
@@ -53,8 +54,6 @@ Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 "comment several lines
 Plug 'scrooloose/nerdcommenter'
-" completion
-Plug 'ervandew/supertab'
 "search on files
 Plug 'mileszs/ack.vim'
 "write todo files
@@ -63,17 +62,29 @@ Plug 'irrationalistic/vim-tasks'
 Plug 'ludovicchabant/vim-gutentags'
 "autopep8
 Plug 'tell-k/vim-autopep8'
+"completion
+Plug 'ycm-core/YouCompleteMe'
+"Search
+Plug 'rking/ag.vim'
 call plug#end()
 
 
-let g:syntastic_always_populate_loc_list = 0
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 1
-let g:syntastic_python_checkers = ['flake8']
-"ignore 80 line length
-let g:syntastic_python_flake8_args='--ignore=E501'
-
+"let g:syntastic_always_populate_loc_list = 0
+"let g:syntastic_auto_loc_list = 0
+"let g:syntastic_check_on_open = 0
+"let g:syntastic_check_on_wq = 1
+"let g:syntastic_python_checkers = ['flake8']
+""ignore 80 line length
+"let g:syntastic_python_flake8_args='--ignore=E501'
 let g:gutentags_file_list_command = 'find . -name "*.py"'
-
 let g:github_colors_soft = 1
+"let g:jedi#completions_command = "<leader>c"
+"let g:jedi#popup_on_dot = 1
+"let g:ycm_python_interpreter_path = '/home/mehdi/.pyenv/shims/python'
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_auto_trigger = 1
+"let g:ycm_key_invoke_completion = '<leader>c'
+
+" leader + right = follow tag, leader + left = go back
+nnoremap <leader><right> <C-]>
+nnoremap <leader><left> <C-T>
