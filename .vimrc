@@ -16,7 +16,7 @@ set mouse=a
 "leader = space, easier to type than '\'
 let mapleader = " "
 
-set history=1000
+set history=10000
 
 "to search on recently opened files
 nmap <leader>b :CtrlPBuffer<CR>
@@ -81,12 +81,14 @@ call plug#end()
 
 let g:gutentags_file_list_command = 'find . -name "*.py"'
 let g:github_colors_soft = 1
+let g:ycm_python_interpreter_path = '/home/mehdi/.pyenv/shims/python'
 
 "let g:jedi#completions_command = "<leader>c"
 "let g:jedi#popup_on_dot = 1
 
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_auto_trigger = 1
+
 "let g:ycm_key_invoke_completion = '<leader>c'
 
 " leader + right = follow tag, leader + left = go back
@@ -101,6 +103,7 @@ let g:one_allow_italics = 1
 
 if has("nvim")
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set laststatus=0 ruler "disable annoying ruler
 endif
 
 if (has("termguicolors"))
