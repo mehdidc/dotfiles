@@ -47,3 +47,5 @@ let g:github_colors_soft = 1
 nnoremap <leader><right> <C-]>
 nnoremap <leader><left> <C-T>
 let g:one_allow_italics = 1
+let b:ale_enabled = 0
+
