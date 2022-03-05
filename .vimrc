@@ -40,6 +40,11 @@ Plug 'dense-analysis/ale'
 Plug 'tpope/vim-sleuth'
 " git intergration
 Plug 'tpope/vim-fugitive'
+" completion
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
 call plug#end()
 let g:gutentags_file_list_command = 'find . -name "*.py"'
 let g:github_colors_soft = 1
@@ -48,4 +53,4 @@ nnoremap <leader><right> <C-]>
 nnoremap <leader><left> <C-T>
 let g:one_allow_italics = 1
 let b:ale_enabled = 0
-
+let g:deoplete#enable_at_startup = 1
